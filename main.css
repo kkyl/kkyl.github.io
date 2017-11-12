@@ -1,18 +1,22 @@
-/*general nav bar*/
+/*default for entire site*/
 * {
     box-sizing: border-box;
     font-size: 16px;
 }
 
+/* information in body of site */
 body {
-font-family: 'Barlow Semi Condensed', sans-serif;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	margin: 0;
 }
 
+/* allow divs to line up next to each other at top of each */
 div {
 	display: inline-block;
 	vertical-align: top;
 }
 
+/* change default font sizing of headers */
 h1{
 	font-size: 36px;
 }
@@ -25,15 +29,13 @@ h3{
 	font-size: 20px;
 }
 
-
+/* nav bar settings */
 nav {
 	background-color: #87b5ff;
-	font-size: 18px;
+	font-size: 20px;
 	padding: 15px;
 	position: fixed;
-	min-width: 99%;
-	/*position: sticky;
-	float: right;*/
+	width: 100%;
 }
 
 /*hover on links of nav bar*/
@@ -43,6 +45,7 @@ nav a:hover {
 	color: black;
 }
 
+/* nav bar links */
 nav a {
 	text-decoration: none;
 	color: white;
@@ -50,23 +53,26 @@ nav a {
 	padding-left: 10px;
 }
 
-/*highlight active tab*/
+/*highlight active link tab*/
 nav a.active{
 	background-color: #eeeacd;
 }
 
+/* default section settings */
 section {
-	padding:60px;
+	padding: 60px;
 	display: block;
 	min-width: 100%;
 	float: left;
 }
 
+/* have sections alterate in color */
 section:nth-child(odd) {
     background: #e8e7d7;
     border-color: white;
 }
 
+/* css for name and profile picture div */
 #profile-div {
 	width: 40%;
 	padding: 30px;
@@ -74,6 +80,7 @@ section:nth-child(odd) {
 	float:left;
 }
 
+/* css for personal statement div */
 #statement-div {
 	width: 60%;
 	padding-top: 150px;
@@ -83,22 +90,26 @@ section:nth-child(odd) {
 	vertical-align: middle;
 }
 
+/* adjust profile image sizing */
 img {
 	max-width: 60%;
 }
 
+/* class for any areas that need to be centered */
 .center-content {
 	text-align: center;
 }
 
+/* css for the divs in the background section */
 .bkgrd-div {
 	width: 45%;
 	float: left;
 	padding: 0px 30px 0px 30px;
 }
 
+/* "griding" boxes that splits sceen into 3 sections */
 .col-onethird {
-	width: 30%;
+	/*width: 30%*/;
 	padding-left: 20px;
 	padding-right: 20px;
 	border-style: solid;
@@ -107,12 +118,29 @@ img {
     border-radius: 5px;
     margin: 20px;
     box-shadow: 10px 10px 10px #708fc1;
+    width: -webkit-calc(33% - 40px);
+    width: -moz-calc(33% - 40px);
+    width: -ms-calc(33% - 40px);
+    width: -o-calc(33% - 40px);
+    width: calc(33% - 40px);
+
 }
+
+
+/**** media queries: ****/
 
 /*portrait phones*/
 @media only screen and (max-width: 480px){
+	section{
+		padding: 5px;
+	}
 	.col-onethird{
-		width: 100%;
+	    margin: 10px;
+	    width: -webkit-calc(100% - 30px);
+	    width: -moz-calc(100% - 30px);
+	    width: -ms-calc(100% - 30px);
+	    width: -o-calc(100% - 30px);
+	    width: calc(100% - 30px);
 	}
 
 	.bkgrd-div{
@@ -120,37 +148,39 @@ img {
 	}
 
 	div{
-		min-width: 100%;
+		width: 100%;
 	}
 }
 
 /*landscape phones, portrait tablets */
 @media only screen and (min-width: 481px) and (max-width: 767px){
+	section{
+		padding: 10px;
+	}
 	.col-onethird{
-		width: 100%;
+	    width: -webkit-calc(100% - 40px);
+	    width: -moz-calc(100% - 40px);
+	    width: -ms-calc(100% - 40px);
+	    width: -o-calc(100% - 40px);
+	    width: calc(100% - 40px);
 	}
 }
 
 /* portrait tablets, small desktops */ 
 @media only screen and (min-width: 768px) and (max-width: 991px){
 	.col-onethird{
-		width: 40%;
+	width: -webkit-calc(50% - 50px);
+    width: -moz-calc(50% - 50px);
+    width: -ms-calc(50% - 50px);
+    width: -o-calc(50% - 50px);
+    width: calc(50% - 50px);
 	}
 }
 
 /* landscape tablets, medium desktops */ 
 @media only screen and (min-width: 992px) and (max-width: 1199px){
-	.col-onethird{
-		width: 25%;
-	}
 }
 
 /* large desktops */ 
 @media only screen and (min-width: 1200px){
-	.col-onethird{
-		width: 30%;
-	}
-	div {
-		min-width: 100%;
-	}
 }
