@@ -46,7 +46,8 @@ nav a:hover {
 nav a {
 	text-decoration: none;
 	color: white;
-	padding-right: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 /*highlight active tab*/
@@ -106,4 +107,39 @@ img {
     border-radius: 5px;
     margin: 20px;
     box-shadow: 10px 10px 10px #708fc1;
+}
+
+/*portrait phones*/
+@media only screen and (max-width: 480px){
+	.col-onethird{
+		width: 100%;
+	}
+}
+
+/*landscape phones, portrait tablets */
+@media only screen and (min-width: 481px) and (max-width: 767px){
+	.col-onethird{
+		width: 100%;
+	}
+}
+
+/* portrait tablets, small desktops */ 
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.col-onethird{
+		width: 40%;
+	}
+}
+
+/* landscape tablets, medium desktops */ 
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	.col-onethird{
+		width: 25%;
+	}
+}
+
+/* large desktops */ 
+@media only screen and (min-width: 1200px){
+	.col-onethird{
+		width: 30%;
+	}
 }
