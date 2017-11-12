@@ -114,6 +114,14 @@ img {
 	.col-onethird{
 		width: 100%;
 	}
+
+	.bkgrd-div{
+		width: 100%;
+	}
+
+	div{
+		min-width: 100%;
+	}
 }
 
 /*landscape phones, portrait tablets */
