@@ -1,6 +1,6 @@
 function animate_nav(linkid, destid){
     $('#'+linkid).click(function() {
-	    $('html').animate({
+	    $('html,body').animate({
 	        scrollTop: $('#'+destid).offset().top
 	    }, '1600');
 	});
