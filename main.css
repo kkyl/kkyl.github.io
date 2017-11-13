@@ -116,10 +116,14 @@ section:nth-child(odd) {
 	max-width: 70%;
 }
 
-.imgscale{
+.imgscale-portrait{
 	max-width: 60%;
 	display: block;
 	margin: auto;
+}
+
+.imgscale-landscape{
+	max-width: 100%;
 }
 
 /* class for any areas that need to be centered */
