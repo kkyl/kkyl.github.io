@@ -10,7 +10,7 @@ body {
 	margin: 0;
 }
 
-/* allow divs to line up next to each other at top of each */
+/* allow divs to line up next to each other and align at the top of the div row */
 div {
 	display: inline-block;
 	vertical-align: top;
@@ -29,40 +29,48 @@ h3{
 	font-size: 20px;
 }
 
+/* adjust link font for linkedin */
+#contact-link{
+	font-size: 20px;
+}
+
+
+/* change font of bulleting */
+ul li {
+	font-size: 20px;
+}
+
+
 /* nav bar settings */
 nav {
+	width: 100%;
+	padding: 15px;
 	background-color: #87b5ff;
 	font-size: 20px;
-	padding: 15px;
 	position: fixed;
-	width: 100%;
 }
 
 /*hover on links of nav bar*/
 nav a:hover {
+	padding: 5px 10px 5px 10px; /* ensure left/right padding same as 'a' padding */
 	background-color: #aefccd;
-	padding: 10px;
 	color: black;
 }
 
 /* nav bar links */
 nav a {
-	text-decoration: none;
-	color: white;
 	padding-right: 10px;
 	padding-left: 10px;
+	text-decoration: none;
+	color: white;
 }
 
-/*highlight active link tab*/
-nav a.active{
-	background-color: #eeeacd;
-}
 
 /* default section settings */
 section {
-	padding: 60px;
+	min-width: 100%; /* ensure section stretches entire width */
+	padding: 40px 15px 30px 15px;
 	display: block;
-	min-width: 100%;
 	float: left;
 }
 
@@ -74,25 +82,20 @@ section:nth-child(odd) {
 
 /* css for name and profile picture div */
 #profile-div {
-	width: 40%;
-	padding: 30px;
-	padding-top: 100px;
-	float:left;
+	padding: 100px 30px 30px 30px;
 }
 
 /* css for personal statement div */
 #statement-div {
-	width: 60%;
-	padding-top: 150px;
-	padding-left: 60px;
-	padding-right: 60px;
-	float:left;
-	vertical-align: middle;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-/* adjust profile image sizing */
-img {
-	max-width: 60%;
+/* adjust profile image */
+#prof-pic {
+	border-radius: 50%;
+	max-width: 70%;
 }
 
 /* class for any areas that need to be centered */
@@ -102,14 +105,41 @@ img {
 
 /* css for the divs in the background section */
 .bkgrd-div {
-	width: 45%;
-	float: left;
+	width: 50%;
 	padding: 0px 30px 0px 30px;
+	float: left;
 }
 
-/* "griding" boxes that splits sceen into 3 sections */
-.col-onethird {
-	/*width: 30%*/;
+/* 12 column griding system */
+
+[class*='col-'] {
+        float: left;
+}
+/* split columns into 3 */
+.col-4{
+	width: 33%;
+}
+
+.col-5{
+	width: 41.66%;
+}
+
+.col-7{
+	width: 58.33%;
+}
+
+.col-12{
+	width: 100%;
+}
+
+/* split columns in 3, wrap each element in a border and margin */
+.col-4.boxing {
+	/*subtract margins and box shadow from width */
+	width: -webkit-calc(33% - 50px);
+    width: -moz-calc(33% - 50px);
+    width: -ms-calc(33% - 50px);
+    width: -o-calc(33% - 50px);
+    width: calc(33% - 50px);
 	padding-left: 20px;
 	padding-right: 20px;
 	border-style: solid;
@@ -118,23 +148,24 @@ img {
     border-radius: 5px;
     margin: 20px;
     box-shadow: 10px 10px 10px #708fc1;
-    width: -webkit-calc(33% - 40px);
-    width: -moz-calc(33% - 40px);
-    width: -ms-calc(33% - 40px);
-    width: -o-calc(33% - 40px);
-    width: calc(33% - 40px);
-
+    float: none;
 }
 
 
 /**** media queries: ****/
 
-/*portrait phones*/
-@media only screen and (max-width: 480px){
-	section{
-		padding: 5px;
+/* phones*/
+@media only screen and (max-width: 767px){
+
+	h2{
+		font-size: 22px;
 	}
-	.col-onethird{
+
+	.col-12-s{
+		width: 100%;
+	}
+
+	.col-4.boxing{
 	    margin: 10px;
 	    width: -webkit-calc(100% - 30px);
 	    width: -moz-calc(100% - 30px);
@@ -150,37 +181,45 @@ img {
 	div{
 		width: 100%;
 	}
+
+
+
 }
 
-/*landscape phones, portrait tablets */
-@media only screen and (min-width: 481px) and (max-width: 767px){
-	section{
-		padding: 10px;
-	}
-	.col-onethird{
-	    width: -webkit-calc(100% - 40px);
-	    width: -moz-calc(100% - 40px);
-	    width: -ms-calc(100% - 40px);
-	    width: -o-calc(100% - 40px);
-	    width: calc(100% - 40px);
-	}
-}
-
-/* portrait tablets, small desktops */ 
+/* tablets */ 
 @media only screen and (min-width: 768px) and (max-width: 991px){
-	.col-onethird{
+	#prof-pic {
+		max-width: 100%;
+	}
+	#statement-div {
+		padding-top: 80px;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.col-4.boxing{
 	width: -webkit-calc(50% - 50px);
     width: -moz-calc(50% - 50px);
     width: -ms-calc(50% - 50px);
     width: -o-calc(50% - 50px);
     width: calc(50% - 50px);
 	}
+
+	ul li {
+		font-size: 16px;
+	}
 }
 
-/* landscape tablets, medium desktops */ 
-@media only screen and (min-width: 992px) and (max-width: 1199px){
+/* landscape tablets, desktops */ 
+@media only screen and (min-width: 992px) {
+	section{
+		padding: 40px 80px 60px 80px;
+	}
+
+	#statement-div {
+		padding-top: 140px;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 }
 
-/* large desktops */ 
-@media only screen and (min-width: 1200px){
-}
