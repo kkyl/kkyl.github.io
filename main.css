@@ -8,7 +8,7 @@
 body {
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	margin: 0;
-	display: none;
+	display: none; /* uses fade in from JS file when user loads website */
 }
 
 /* allow divs to line up next to each other and align at the top of the div row */
@@ -30,13 +30,24 @@ h3{
 	font-size: 20px;
 }
 
-#intro {
-	padding-top: 0px;
+
+/* default section settings */
+section {
+	min-width: 100%; /* ensure section stretches entire width */
+	padding: 40px 15px 30px 15px;
+	display: block;
+	float: left;
 }
 
-iframe {
-	height: 200px;
-	max-width: 100%;
+/* have sections alterate in color */
+section:nth-child(odd) {
+    background: #e8e7d7;
+    border-color: white;
+}
+
+/*remove padding at top of intro section */
+#intro {
+	padding-top: 0px;
 }
 
 /* adjust links for contact info */
@@ -45,12 +56,21 @@ iframe {
 	font-size: 20px;
 	text-decoration: none;
 	color: gray;
+	position: relative;
 }
 
-.hidden-img{
-	display: none;
+/* links lift up a bit when hovering over contact links */
+#intro img ~ a:hover{
+	top: -5px;
 }
 
+/* default sizing for youtube video, ensures width does not surpass border */
+iframe {
+	height: 200px;
+	max-width: 100%;
+}
+
+/* default button styling */
 button {
 
 	background-color: #87b5ff;
@@ -86,6 +106,7 @@ nav a:hover {
 	padding: 5px 10px 5px 10px; /* ensure left/right padding same as 'a' padding */
 	background-color: #aefccd;
 	color: black;
+	border-radius: 5px;
 }
 
 /* nav bar links */
@@ -97,49 +118,37 @@ nav a {
 }
 
 
-/* default section settings */
-section {
-	min-width: 100%; /* ensure section stretches entire width */
-	padding: 40px 15px 30px 15px;
-	display: block;
-	float: left;
-}
-
-/* have sections alterate in color */
-section:nth-child(odd) {
-    background: #e8e7d7;
-    border-color: white;
-}
-
-/* css for name and profile picture div */
+/* padding for name and profile picture div */
 #profile-div {
 	padding: 100px 30px 30px 30px;
 }
 
-/* css for personal statement div */
+/* padding for personal statement div */
 #statement-div {
 	padding-top: 20px;
 	padding-left: 30px;
 	padding-right: 30px;
 }
 
-/* adjust profile image */
+/* adjust profile image to circle with set width relative to page */
 #prof-pic {
 	border-radius: 50%;
 	max-width: 70%;
 }
 
+/* scale images in portrait mode */
 .imgscale-portrait{
 	max-width: 60%;
 	display: block;
 	margin: auto;
 }
 
+/* scale images in landscape mode */
 .imgscale-landscape{
 	max-width: 100%;
 }
 
-/* class for any areas that need to be centered */
+/* class for any elements that need to be centered */
 .center-content {
 	text-align: center;
 }
@@ -151,18 +160,14 @@ section:nth-child(odd) {
 	float: left;
 }
 
-#references h4{
-	display: inline-block;
-}
 
 
-
-
-/* 12 column griding system */
+/* 12 column griding system with selected gridding sizes */
 
 [class*='col-'] {
         float: left;
 }
+
 /* split columns into 3 */
 .col-4{
 	width: 33%;
@@ -204,18 +209,20 @@ section:nth-child(odd) {
 
 /**** media queries: ****/
 
-/* phones*/
+/* phones */
 @media only screen and (max-width: 767px){
 
 	h2{
 		font-size: 22px;
 	}
 
+	/* define column for small screens */
 	.col-12-s{
 		width: 100%;
 	}
 
-	.col-4.boxing{
+	/* decrease margins and adjust width accordingly for mobile devices */
+	.col-12-s.boxing{
 	    margin: 10px;
 	    width: -webkit-calc(100% - 30px);
 	    width: -moz-calc(100% - 30px);
@@ -224,30 +231,30 @@ section:nth-child(odd) {
 	    width: calc(100% - 30px);
 	}
 
-	.bkgrd-div{
-		width: 100%;
-	}
-
-	div{
-		width: 100%;
-	}
-
-
 
 }
 
 /* tablets */ 
 @media only screen and (min-width: 768px) and (max-width: 991px){
+	/* since section is in 2 columns, enlarge image */
 	#prof-pic {
 		max-width: 100%;
 	}
+
+	/* new adjustments to divs */
 	#statement-div {
 		padding-top: 200px;
 		padding-left: 40px;
 		padding-right: 40px;
 	}
 
-	.col-4.boxing{
+	/* split columns in two */
+	.col-6-m{
+		width: 50%;
+	}
+
+	/* adjust box width based on different column size */
+	.col-6-m.boxing{
 	width: -webkit-calc(50% - 50px);
     width: -moz-calc(50% - 50px);
     width: -ms-calc(50% - 50px);
@@ -267,8 +274,9 @@ section:nth-child(odd) {
 
 /* landscape tablets, desktops */ 
 @media only screen and (min-width: 992px) {
+	/* allow more empty spacing on edges and between sections */
 	section{
-		padding: 40px 80px 60px 80px;
+		padding: 40px 100px 60px 100px;
 	}
 
 	#statement-div {
@@ -282,6 +290,8 @@ section:nth-child(odd) {
 	}
 }
 
+
+/* to make video bigger for very large screens */
 @media only screen and (min-width: 1250px){
 	iframe {
 		height: 140px;

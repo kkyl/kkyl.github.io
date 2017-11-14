@@ -1,15 +1,19 @@
+
+/* have screen move to given destination id section */
 function animate_nav(linkid, destid){
     $('#'+linkid).click(function() {
 	    $('html,body').animate({
 	        scrollTop: $('#'+destid).offset().top
-	    }, '1600');
+	    }, 1100);
 	});
 }
 
+/* load page with fade in */
 function fade_page_load(){
 	$('body').fadeIn('slow');
 }
 
+/* toggle showing older extracurriculars in "extra experiences" section */
 function toggle_extras(){
     $('#old-extra').click(function() {
 	    $('#div-hide').slideToggle('slow');
@@ -22,12 +26,15 @@ function toggle_extras(){
 	});
 }
 
-
+/* run when documents is ready*/
 $(document).ready(function(){
 
 	fade_page_load();
+
+	/* move to background section when user clicks the learn more button */
 	animate_nav('learn-more', 'background');
 
+	/* hide the old extracurriculars first, show/hide will be toggled by a button */
 	$("#div-hide").hide();
 	toggle_extras();
 
