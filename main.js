@@ -1,3 +1,7 @@
+/* external JavaScript/JQuery for index.html */
+/* author: Kristy Lin */
+/* not as much javascript code as html/css files, only added what added effect to the website without extraneous elements */
+
 
 /* have screen move to given destination id section */
 function animate_nav(linkid, destid){
