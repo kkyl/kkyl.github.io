@@ -30,6 +30,12 @@ function toggle_extras(){
 	});
 }
 
+
+
+
+function directToFindings() {
+    window.location.href = "/findings.html";
+}
 /* run when documents is ready*/
 $(document).ready(function(){
 
@@ -41,5 +47,7 @@ $(document).ready(function(){
 	/* hide the old extracurriculars first, show/hide will be toggled by a button */
 	$("#div-hide").hide();
 	toggle_extras();
+
+	document.getElementById("findings").onclick = function() {directToFindings()};
 
 });
