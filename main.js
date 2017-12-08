@@ -38,7 +38,7 @@ function directToFindings() {
 }
 
 function directToStories() {
-    window.location.href = "https://drive.google.com/open?id=1RpNsxdzCXqMODr84NXSIGzFmWn9Gmpnr2X6nlDmVTG4";
+    window.location.href = "/index.html";
 }
 /* run when documents is ready*/
 $(document).ready(function(){
