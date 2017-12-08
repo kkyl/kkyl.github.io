@@ -36,6 +36,10 @@ function toggle_extras(){
 function directToFindings() {
     window.location.href = "/findings.html";
 }
+
+function directToStories() {
+    window.location.href = "https://docs.google.com/spreadsheets/d/1RpNsxdzCXqMODr84NXSIGzFmWn9Gmpnr2X6nlDmVTG4/edit#gid=0";
+}
 /* run when documents is ready*/
 $(document).ready(function(){
 
@@ -49,5 +53,6 @@ $(document).ready(function(){
 	toggle_extras();
 
 	document.getElementById("findings").onclick = function() {directToFindings()};
+	document.getElementById("stories").onclick = function() {directToStories()};
 
 });
