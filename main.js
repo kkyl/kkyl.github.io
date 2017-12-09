@@ -49,6 +49,7 @@ function allButtons(){
 	directTo("cog_walk", "https://drive.google.com/open?id=1y_0MUzCxE3MnfkqKeGvPEo24Z-g781WPKMva1gkUni0");
 	directTo("navtest", "https://usabilityhub.com/tests/728cf7599990/results/b306120d84bd");
 	directTo("sectest", "https://usabilityhub.com/tests/5568d5f9d6e/results/53a6216821ae");
+	directTo("tao_web", "https://github.com/taouci-web/taouci_public");
 }
 
 /* run when documents is ready*/
