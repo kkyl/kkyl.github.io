@@ -74,9 +74,8 @@ section:nth-child(odd) {
 	display: block;
 	margin: auto;
 	border: 5px solid #2e8bc1;
-	/*border-radius: 10px;
-	display: block;
-	margin: auto;*/
+	border-radius: 10px;
+
 }
 
 /* default sizing for youtube video, ensures width does not surpass border */
