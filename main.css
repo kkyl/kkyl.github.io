@@ -72,6 +72,7 @@ section:nth-child(odd) {
 
 #work a img{
 	border: 5px solid #2e8bc1;
+	
 	border-radius: 10px;
 	display: block;
 	margin: auto;
