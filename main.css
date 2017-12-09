@@ -56,7 +56,7 @@ section:nth-child(odd) {
 /* adjust links for contact info */
 #intro img ~ a{
 	margin-top: 30px;
-	font-size: 20px;
+	font-size: 22px;
 	text-decoration: none;
 	color: #2e8bc1;
 	font-weight: bold;
@@ -68,6 +68,13 @@ section:nth-child(odd) {
 /* links lift up a bit when hovering over contact links */
 #intro img ~ a:hover{
 	top: -5px;
+}
+
+#work a img{
+	border: 5px solid #2e8bc1;
+	border-radius: 10px;
+	display: block;
+	margin: auto;
 }
 
 /* default sizing for youtube video, ensures width does not surpass border */
@@ -117,8 +124,7 @@ nav a:hover {
 
 /* nav bar links */
 nav a {
-	padding-right: 10px;
-	padding-left: 10px;
+	padding: 10px;
 	text-decoration: none;
 	color: white;
 	display: inline-block;
@@ -251,7 +257,12 @@ nav a {
 	}
 
 	section{
-		padding-top: 60px;
+		padding-top: 90px;
+	}
+
+#intro img ~ a{
+		width: 100%;
+
 	}
 
 	/* decrease margins and adjust width accordingly for mobile devices */
