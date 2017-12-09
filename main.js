@@ -33,13 +33,24 @@ function toggle_extras(){
 
 
 
-function directToFindings() {
-    window.location.href = "/findings.html";
+function directTo(id, route) {
+	$("#"+id).click(function() {
+  		window.open(route,"_blank");
+	});
 }
 
-function directToStories() {
-    window.location.href = "/index.html";
+function allButtons(){
+	directTo("findings", "/findings.html");
+	directTo("interviews", "https://drive.google.com/open?id=1SuffZNwistQ9tVHJUs8avDW9eUx6v79mlzYUnIJI8cU");
+	directTo("competitors", "https://drive.google.com/open?id=19lAbY7_jslVOv6jfReksxPk7Rhm2US-KOIqxTkOAAKY");
+	directTo("feature_matrix", "https://drive.google.com/open?id=1CTw-m5wmO32PBF0q-rJIbXytDMI57VshYJZ8SXsqLbo");
+	directTo("prioritization", "https://drive.google.com/open?id=1YR_Jlci-fm6gvBu6qJnf4okBXrHIIGEHIIQWtob5iv4");
+	directTo("stories", "https://drive.google.com/open?id=1RpNsxdzCXqMODr84NXSIGzFmWn9Gmpnr2X6nlDmVTG4");
+	directTo("cog_walk", "https://drive.google.com/open?id=1y_0MUzCxE3MnfkqKeGvPEo24Z-g781WPKMva1gkUni0");
+	directTo("navtest", "https://usabilityhub.com/tests/728cf7599990/results/b306120d84bd");
+	directTo("sectest", "https://usabilityhub.com/tests/5568d5f9d6e/results/53a6216821ae");
 }
+
 /* run when documents is ready*/
 $(document).ready(function(){
 
@@ -51,8 +62,7 @@ $(document).ready(function(){
 	/* hide the old extracurriculars first, show/hide will be toggled by a button */
 	$("#div-hide").hide();
 	toggle_extras();
-
-	document.getElementById("findings").onclick = function() {directToFindings()};
-	document.getElementById("stories").onclick = function() {directToStories()};
+	
+	allButtons();
 
 });
