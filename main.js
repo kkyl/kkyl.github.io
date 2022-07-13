@@ -21,11 +21,11 @@ function fade_page_load(){
 function toggle_extras(){
     $('#old-extra').click(function() {
 	    $('#div-hide').slideToggle('slow');
-	   if ($('#old-extra').text() == "Display Older Events"){
-	   		$('#old-extra').text("Collapse Older Events");
+	   if ($('#old-extra').text() == "Display More Extracurriculars"){
+	   		$('#old-extra').text("Collapse Extracurriculars");
 	   }
 	   else{
-	   		$('#old-extra').text("Display Older Events")
+	   		$('#old-extra').text("Display More Extracurriculars")
 	   }
 	});
 }
