@@ -43,6 +43,7 @@ h5{
 
 h6{
 	font-size: 18px;
+	font-family: 'Google Sans Code';
 }
 
 
@@ -67,9 +68,8 @@ section:nth-child(odd) {
     border-color: white;
 }
 
-/*remove padding at top of intro section */
 #intro {
-	padding-top: 0px;
+	padding: 300px 20px 240px 20px;
 }
 
 /* adjust links for contact info */
@@ -89,6 +89,14 @@ section:nth-child(odd) {
 	top: -5px;
 }
 
+#intro-first-line{
+	margin: 0;
+}
+
+#intro-second-line{
+	margin: 0;
+}
+
 #work a img{
 	display: block;
 	margin: auto;
@@ -105,15 +113,12 @@ iframe {
 
 /* default button styling */
 button {
-	font-family: 'Lato';
-	background-color: #b4c9e8;
-	color: rgb(66, 32, 32);
-	padding: 10px 15px;
+	font-family: 'Google Sans Code';
+	background-color: #5d8fdac0;
+	color: rgb(200, 216, 246);
+	padding: 10px;
 	text-decoration: none;
 	border-radius: 10px;
-	margin-bottom: 30px;
-	margin: 20px auto;
-
 }
 
 
@@ -127,8 +132,9 @@ ul li {
 nav {
 	width: 100%;
 	padding: 15px;
-	background-color: #2e86c1;
+	background-color: #000000;
 	font-size: 20px;
+	font-family: 'Google Sans Code';
 	position: fixed;
 	opacity: 0.9;
 }
@@ -136,7 +142,7 @@ nav {
 /*hover on links of nav bar*/
 nav a:hover {
 	padding: 5px 10px 5px 10px; /* ensure left/right padding same as 'a' padding */
-	background-color: #aefccd;
+	background-color: #5d8fdac0;
 	color: black;
 	border-radius: 5px;
 }
@@ -152,21 +158,19 @@ nav a {
 
 /* padding for name and profile picture div */
 #profile-div {
-	padding: 100px 30px 30px 30px;
+	padding: 30px 30px 30px 30px;
 }
 
 /* padding for personal statement div */
 #statement-div {
-	padding-top: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding: 30px 30px 30px 30px;
 	text-align: left;
 }
 
 /* adjust profile image to circle with set width relative to page */
 #prof-pic {
 	border-radius: 50%;
-	max-width: 70%;
+	max-width: 50%;
 }
 
 /* scale images in portrait mode */
@@ -305,13 +309,6 @@ nav a {
 		max-width: 100%;
 	}
 
-	/* new adjustments to divs */
-	#statement-div {
-		padding-top: 200px;
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-
 	/* split columns in two */
 	.col-6-m{
 		width: 50%;
@@ -340,14 +337,9 @@ nav a {
 @media only screen and (min-width: 992px) {
 	/* allow more empty spacing on edges and between sections */
 	section{
-		padding: 40px 120px 60px 100px;
+		padding: 50px;
 	}
 
-	#statement-div {
-		padding-top: 250px;
-		padding-left: 60px;
-		padding-right: 60px;
-	}
 	iframe {
 		height: 100px;
 		width: 180px;
