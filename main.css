@@ -9,7 +9,7 @@
 
 /* information in body of site */
 body {
-	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-family: 'Lato';
 	margin: 0;
 	display: none; /* uses fade in from JS file when user loads website */
 }
@@ -20,17 +20,50 @@ div {
 	vertical-align: top;
 }
 
+/* color to emphasize text*/
+textemphdark {
+	color: rgb(32, 112, 224);
+	font-size: 16px;
+}
+
+textemphlight {
+	color: rgb(117, 165, 255);
+	font-size: 16px;
+}
+
+textemphlight2 {
+	color: rgb(255, 216, 119);
+	font-size: 16px;
+}
+
 /* change default font sizing of headers */
 h1{
-	font-size: 36px;
+	font-size: 80px;
 }
 
 h2{
-	font-size: 26px;
+	font-size: 60px;
 }
 
 h3{
-	font-size: 20px;
+	font-size: 40px;
+}
+
+h4{
+	font-size: 30px;
+}
+
+h5{
+	font-size: 22px;
+}
+
+h6{
+	font-size: 16px;
+}
+
+p{
+	font-size: 16px;
+	font-family: 'Google Sans Code';
 }
 
 
@@ -43,14 +76,20 @@ section {
 }
 
 /* have sections alterate in color */
+section:nth-child(even) {
+    background: #0f172a;
+    border-color: white;
+	color: white;
+}
+
+/* have sections alterate in color */
 section:nth-child(odd) {
-    background: #e8e7d7;
+    background: #d4d3c7af;
     border-color: white;
 }
 
-/*remove padding at top of intro section */
 #intro {
-	padding-top: 0px;
+	padding: 300px 20px 240px 20px;
 }
 
 /* adjust links for contact info */
@@ -70,6 +109,14 @@ section:nth-child(odd) {
 	top: -5px;
 }
 
+#intro-first-line{
+	margin: 0;
+}
+
+#intro-second-line{
+	margin: 0;
+}
+
 #work a img{
 	display: block;
 	margin: auto;
@@ -86,16 +133,12 @@ iframe {
 
 /* default button styling */
 button {
-	font-family: 'Barlow Semi Condensed', sans-serif;
-	background-color: #2e86c1;
-	color: white;
-	padding: 10px 15px;
+	font-family: 'Google Sans Code';
+	background-color: rgb(32, 112, 224);
+	color: rgb(200, 216, 246);
+	padding: 10px;
 	text-decoration: none;
 	border-radius: 10px;
-	margin-bottom: 30px;
-	display: block;
-	margin: 20px auto;
-
 }
 
 
@@ -109,8 +152,9 @@ ul li {
 nav {
 	width: 100%;
 	padding: 15px;
-	background-color: #2e86c1;
+	background-color: #000000;
 	font-size: 20px;
+	font-family: 'Google Sans Code';
 	position: fixed;
 	opacity: 0.9;
 }
@@ -118,7 +162,7 @@ nav {
 /*hover on links of nav bar*/
 nav a:hover {
 	padding: 5px 10px 5px 10px; /* ensure left/right padding same as 'a' padding */
-	background-color: #aefccd;
+	background-color: #5d8fdac0;
 	color: black;
 	border-radius: 5px;
 }
@@ -134,20 +178,19 @@ nav a {
 
 /* padding for name and profile picture div */
 #profile-div {
-	padding: 100px 30px 30px 30px;
+	padding: 30px 30px 30px 30px;
 }
 
 /* padding for personal statement div */
 #statement-div {
-	padding-top: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding: 30px 30px 30px 30px;
+	text-align: left;
 }
 
 /* adjust profile image to circle with set width relative to page */
 #prof-pic {
 	border-radius: 50%;
-	max-width: 70%;
+	max-width: 50%;
 }
 
 /* scale images in portrait mode */
@@ -170,7 +213,7 @@ nav a {
 /* css for the divs in the background section */
 .bkgrd-div {
 	width: 50%;
-	padding: 0px 30px 0px 30px;
+	padding: 30px 50px 30px 50px;
 	float: left;
 }
 
@@ -242,6 +285,24 @@ nav a {
     float: none;
 }
 
+.col-12.boxing {
+	/*subtract margins and box shadow from width */
+	width: -webkit-calc(100% - 50px);
+    width: -moz-calc(100% - 50px);
+    width: -ms-calc(100% - 50px);
+    width: -o-calc(100% - 50px);
+    width: calc(100% - 50px);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border-style: solid;
+    border-width: 2px;
+    border-color: #2e86c1;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px #708fc1;
+    float: none;
+}
 
 /**** media queries: ****/
 
@@ -266,15 +327,15 @@ nav a {
 
 	}
 
-	/* decrease margins and adjust width accordingly for mobile devices */
-	.col-12-s.boxing{
-	    margin: 10px;
-	    width: -webkit-calc(100% - 30px);
-	    width: -moz-calc(100% - 30px);
-	    width: -ms-calc(100% - 30px);
-	    width: -o-calc(100% - 30px);
-	    width: calc(100% - 30px);
-	}
+/* decrease margins and adjust width accordingly for mobile devices */
+.col-12-s.boxing{
+	margin: 10px;
+	width: -webkit-calc(100% - 30px);
+	width: -moz-calc(100% - 30px);
+	width: -ms-calc(100% - 30px);
+	width: -o-calc(100% - 30px);
+	width: calc(100% - 30px);
+}
 
 
 }
@@ -284,13 +345,6 @@ nav a {
 	/* since section is in 2 columns, enlarge image */
 	#prof-pic {
 		max-width: 100%;
-	}
-
-	/* new adjustments to divs */
-	#statement-div {
-		padding-top: 200px;
-		padding-left: 40px;
-		padding-right: 40px;
 	}
 
 	/* split columns in two */
@@ -321,14 +375,9 @@ nav a {
 @media only screen and (min-width: 992px) {
 	/* allow more empty spacing on edges and between sections */
 	section{
-		padding: 40px 120px 60px 100px;
+		padding: 50px;
 	}
 
-	#statement-div {
-		padding-top: 250px;
-		padding-left: 60px;
-		padding-right: 60px;
-	}
 	iframe {
 		height: 100px;
 		width: 180px;

@@ -5,7 +5,9 @@
 	<title>Kristy's Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Google+Sans+Code" rel="stylesheet">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="main.js"></script>
 
@@ -18,7 +20,7 @@
 	<nav>
 		<a href="#intro">Home</a>
 		<a href="#story">Story</a>
-		<a href="#background">Education/Skills</a>
+		<a href="#background">Background</a>
 		<a href="#work">Work Experience</a>
 		<a href="#projects">Projects</a>
 		<a href="#other">Other Experiences</a>
@@ -29,156 +31,111 @@
 	<section class="center-content" id="intro">
 
 		<!--profile picture and contact info-->
-		<div class="col-5 col-12-s col-6-m" id="profile-div">
-			<!--name-->
-			<h1>Kristy Lin</h1>
+		<div class="col-4 col-12-s col-6-m" id="profile-div">
 
 			<!--profile pic -->
 			<img id="prof-pic" src="fallprofile.JPG" alt="Profile Photo">	
 
-			<!--linkedin-->
-			<a class="col-12" href="https://www.linkedin.com/in/kristyylin/">LINKEDIN</a>
-
 		</div>
 		
 		<!--personal statement/intro-->
-		<div class="col-7 col-12-s col-6-m" id="statement-div">
-			<h1>Hello! My name is Kristy Lin, a medical enthusiast who loves music, dance, and tech. </h1>
-
-			<!--button moves user to background section-->
-			<button id="learn-more">Learn more about me.</button>
+		<div class="col-8 col-12-s col-6-m" id="statement-div">
+			<h6 id="intro-first-line"> Hello, my name is  </h6>
+			<h1 id="intro-second-line"> Kristy Lin. </h1>
+			<h6> Software engineer, dancer, and future physician. </h6>
 		</div>
 	</section>
 
 	<!--story explanation-->
 	<section id="story">
-		<h1>My Story</h1>
-		<div class="col-12-s">
-			<h3> Growing up in the Silicon Valley (California), I was always surrounded by technology, and the ability 
-			to create useful applications from software technologies was fascinating for me. In addition, I enjoyed 
-			learning biology in my younger years and started considering fields that could combine my two interests. </h3>
-
-			<h3> With further experiences working with those with special needs and neuroscience research, I 
-			became interested to pursue medicine. I hope that in my path to become physician, I can combine my unique 
-			background to innovate and improve the lives of future patients. </h3>
+		<h2>My Story</h2>
+		<div class="col-12">
+			<div class="col-6 col-12-s bkgrd-div">
+				<p> Growing up in my hometown, I was surrounded by <textemphdark>technology</textemphdark>. The ability 
+				to create useful applications from software technologies was fascinating for me. Additionally, as 
+				<textemphdark>biology</textemphdark> became one of my favorite subjects, and I started considering a career that could combine my two interests. </p>
+			</div>
+			<div class="col-6 col-12-s bkgrd-div">
+				<p> With further experiences working with those with <textemphdark>special needs</textemphdark> and an interest in <textemphdark>neuroscience</textemphdark>, I 
+				became interested to pursue medicine and become a neurologist. I hope that in my path to become physician, I can combine my unique 
+				background to innovate and improve the lives of future patients. </p>
+			</div>
 		</div>
 	</section>	
 	
 	<!--background section-->
 	<section id="background">
-		<h1>Background</h1>
+		<h2>Background</h2>
 		
 		<!--education-->
-		<div class="bkgrd-div col-12-s col-6-m col-6-m">
-			<h2>Education</h2>
-			<ul>
-				<li>University of California, Irvine 
-					<ul>
-						<li>Sep 2014 - Jun 2019</li>
-					</ul>
-				<li>Yonsei University - Seoul, South Korea
-					<ul>
-						<li>Jun 2017 - Aug 2017</li>
-					</ul>
-				</li>
-				<div></div>
-				<li>B.S. Computer Science, Biological Sciences</li>
-				<li>Specialization: Information</li>
-				<li>GPA: 3.92</li>
-			</ul>
+		<div class="col-6 col-12-s boxing">
+			<h3>Education</h3>
+				<div class="col-8 col-12-s">
+					<p>
+						<textemphlight>Carle Illinois College of Medicine </br>
+						University of Illinois, Urbana-Champaign</textemphlight></br>
+						<textemphlight2>Doctor of Medicine (MD)</textemphlight2> </br>
+						Jun 2023 - May 2027 </br></br>
+						
+						<textemphlight>University of California, Irvine </textemphlight></br>
+						<textemphlight2>BS Computer Science, Biological Sciences </br>
+						Specialization: Information</textemphlight2></br>
+						Sep 2014 - Jun 2019 </br></br>
 
-			<h3>Awards:</h3>
-			<ul>
-				<li>Chancellor's Award of Distinction</li>
-					<ul>
-						<li>Awarded to 52 students in the graduating UC Irvine senior class for outstanding research, leadership, and/or service.</li>
-					</ul>
-				</li>
-				<div></div>
-				<li>Phi Beta Kappa
-					<ul>
-						<li>Awarded to 5% graduating seniors for excellence in liberal arts and sciences.</li>
-					</ul>
-				</li>
-				<div></div>
-				<li>Dean's Honors List (14 Quarters)
-					<ul>
-						<li>Awarded when GPA of a given quarter is 3.5 or higher.</li>
-					</ul>
-				</li>
-			</ul> 
-			
-			<h3>Software courses:</h3>
-			<ul>
-				<li>Project in Data/Web Applications</li>
-				<li>Data Management</li>
-				<li>Design and Analysis of Algorithms</li>
-				<li>Computer Networks</li>
-				<li>Operating Systems</li>
-				<li>User Interaction Software</li>
-				<li>Introduction to Artificial Intelligence</li>
-				<li>Intro to Data Mining</li>
-			</ul> 
+						<textemphlight>Yonsei University - Seoul, South Korea </textemphlight></br>
+						Jun 2017 - Aug 2017 </br></br>
+					</p>
+				</div>
 		</div>
 
-		<!--skills lists-->
-		<div class="bkgrd-div col-12-s col-6-m col-6-m">			
-			<h2>Skills</h2>
+		<div class="col-6 col-12-s boxing">
+			<h3>Skills</h3>
+				<div class="col-8 col-12-s">
+					<p>
+						<textemphlight>Technical</textemphlight></br>
+						Python, Java, C, C++, Matlab, HTML, CSS, Javascript, Bootstrap, JSON, XML, Tableau<br><br>
 
-			<div class="col-4 col-12-s col-6-m">
-				<h3>Technical: </h3>
-				<ul>
-					<li>Python</li>
-					<li>Java</li>
-					<li>C/C++</li>
-					<li>SQL</li>
-					<li>HTML/CSS</li>
-					<li>Javascript</li>
-					<li>XML</li>
-					<li>Bootstrap</li>
-					<li>Flask</li>
-					<li>Matlab</li>	
-					<li>Tableau</li>	
-				</ul>
-			</div>
+						<textemphlight>Certifications</textemphlight></br>
+						Basic Life Support (BLS)<br><br>
 
-			<div class="col-4 col-12-s col-6-m">
-				<h3>Software: </h3>
-				<ul>
-					<li>Eclipse</li>
-					<li>Git</li>
-					<li>Linux</li>
-					<li>Vim</li>
-					<li>Perforce</li>
-					<li>MS Office</li>
-					<li>Visual Studio</li>
-					<li>Sublime</li>
-					<li>Tomcat</li>				
-				</ul>
-			</div>
+						<textemphlight>Languages</textemphlight></br>
+						English, Chinese (conversational)<br><br>
 
-			<div class="col-4 col-12-s col-6-m">
-				<h3>Verbal Languages: </h3>
-				<ul>
-					<li>English</li>
-					<li>Mandarin</li>	
-					<li>Spanish (Beginner)</li>
-				</ul>
-			</div>
+					</p>
+					
+				</div>
+		</div>
+
+		<div class="col-12 boxing">
+			<h3>Awards</h3>
+				<div class="col-8 col-12-s">
+					<p>
+						
+						<textemphlight>Chancellor's Award of Distinction - 2019</textemphlight></br>
+						52 students in the graduating UC Irvine senior class for outstanding research, leadership, and/or service </br></br>
+
+						<textemphlight>Phi Beta Kappa - 2019</textemphlight></br>
+						5% graduating seniors for excellence in liberal arts and sciences</br></br>
+
+						<textemphlight>Dean's Honors List (14 Quarters) - 2019</textemphlight></br>
+						GPA 3.5+ for each quarter as a full-time student
+					</p>
+				</div>
+		</div>
 
 		</div>
 	</section>
 
     <!-- work experience -->
 	<section id="work">
-		<h1>Work Experience</h1>
+		<h2>Work Experience</h2>
 
 		
 		<!--sections with h2 for occupation name, h3 for company/time period, p for description, and img image-->
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Special Needs Caregiver</h2>
-			<h3>MAXIM Healthcare Services<br/>Mar 2020 - Present</h3>
+			<h3>Special Needs Caregiver</h3>
+			<h5>MAXIM Healthcare Services<br/>Mar 2020 - Present</h5>
 			<p>
 					I assist with a special needs adult with daily tasks such as brushing his teeth, ensuring he takes his medications, 
 					and providing food.
@@ -186,8 +143,8 @@
 		</div>
 		
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Dance Instructor</h2>
-			<h3>On One Studios and Other Locations<br/>Dec 2021 - Apr 2023</h3>
+			<h3>Dance Instructor</h3>
+			<h5>On One Studios and Other Locations<br/>Dec 2021 - Apr 2023</h5>
 			<p>
 					I teach in different organizations such as On One Studios and Saturday Morns. My goals as a teacher is 
 					to provide a fun and welcoming environment for new dancers. Dancing has been my main hobby and 
@@ -196,8 +153,8 @@
 		</div>			
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Piano Teacher</h2>
-			<h3>Self-Employed<br/>Oct 2021 - Oct 2022</h3>
+			<h3>Piano Teacher</h3>
+			<h5>Self-Employed<br/>Oct 2021 - Oct 2022</h5>
 			<p>
 					I was able to reconnect with my passion for piano and previously took lessons growing up. Each week, 
 					I teach a few students and learned to tackle the challenges of teaching rhythm and technique  
@@ -206,8 +163,8 @@
 		</div>	
 		
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Medical Assistant and Scribe</h2>
-			<h3>California Eye Surgeons<br/>May 2021 - Jun 2023</h3>
+			<h3>Medical Assistant and Scribe</h3>
+			<h5>California Eye Surgeons<br/>May 2021 - Jun 2023</h5>
 			<p>
 					I hold many roles such as taking patient history, going over medication instructions and consent forms, 
 					assisting in laser procedures, taking images, and checking eye vitals. Additionally, I scribe for Dr. Kaur, 
@@ -217,13 +174,13 @@
 	
 	
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Full Stack Engineer</h2>
-			<h3>Round 3 Ventures<br/>Aug 2019 - Feb 2020</h3>
+			<h3>Full Stack Engineer</h3>
+			<h5>Round 3 Ventures<br/>Aug 2019 - Feb 2020</h5>
 			<p>
 					I managed the data collection of the company's two businesses (Strength.com and EverydayMale.com) 
 					and performed adhoc requests using a platform called TreasureData. 
 					SQL queries and python workflows were used to clean and setup the data to export to Tableau. 
-			<div></div>
+			<br><br>
 					Dashboards were built to analyze user activity via pageviews, key performance indicators (KPI)
 					such as customer lifetime value, social media growth, influencer marketing, and paid advertisements. 
 					I also played a part in making website changes using Wordpress, CSS, HTML, and Git (source control). 
@@ -231,28 +188,28 @@
 		</div>
 		
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Reader/Grader</h2>
-			<h3>Computational Linear Algebra <br/> Sep 2017 - Dec 2017</h3>
+			<h3>Reader/Grader</h3>
+			<h5>Computational Linear Algebra <br/> Sep 2017 - Dec 2017</h5>
 			<p>
 				I was selected as a reader/grader for a computational linear algebra class that I took two years prior. Through the job, I create homework solutions for the homework sets every other week and grade homework, labs (in MATLAB), and tests.
 			</p>
 		</div>		
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Software Intern</h2>
-			<h3>Panzura<br/>Jun 2016 - Sep 2016</h3>
+			<h3>Software Intern</h3>
+			<h5>Panzura<br/>Jun 2016 - Sep 2016</h5>
 			<p>I worked on a system to store system data collected from the company's products when tests are ran on the system. Two different methods, a data structure of Linked Lists and databases with SQL, were used to store the information. The email alert system to send error reports was modified to send information from this data collection rather than immediately after testing. </p>
 		</div>
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Software Intern</h2>
-			<h3>Panzura<br/>Jun 2015 - Aug 2015</h3>
+			<h3>Software Intern</h3>
+			<h5>Panzura<br/>Jun 2015 - Aug 2015</h5>
 			<p>I helped develop a data model prototype for large data analysis for the company's product by focusing on the front end of the web application and connecting the data from a Python script that populated a database. Using Flask for AJAX calls between the UI and Python script and Git for source code control, data was extracted and displayed as graphs. HTML, Javascript, CSS, c3.js, and selectize.js were used for the UI.</p>
 		</div>
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Software Intern</h2>
-			<h3>Panzura<br/>Jun 2014 - Sep 2014</h3>
+			<h3>Software Intern</h3>
+			<h5>Panzura<br/>Jun 2014 - Sep 2014</h5>
 			<p>I learned how to do simple white box test automation for the Web UI of the company's product. 
 				It required Jasmine.js for creating test cases and XML to store the defined test cases. 
 				I built an understand of the client/server relationship and how to implement simple quality assurance measures.</p>
@@ -262,32 +219,31 @@
 
 	<!--projects section -->
     <section id="projects">
-		<h1>Projects</h1>
+		<h2>Projects</h2>
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Professional Portfolio (website)</h2>
-			<h3>Oct 2017 - Dec 2017</h3>
+			<h3>Professional Portfolio (website)</h3>
+			<h5>Oct 2017 - Dec 2017</h5>
 			<p>To create this website, user research was gathered to find what users were looking for in a professional portfolio. User testing was done to identify enhancements and changes needed for the website. </p>
-			<button id="findings">View a summary of the findings here. </button>
 		</div>
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2 id="test">Fabflix (web application)</h2>
-			<h3>Mar 2017 - Jun 2017</h3>
+			<h3 id="test">Fabflix (web application)</h3>
+			<h5>Mar 2017 - Jun 2017</h5>
 			<p>I created and used a SQL database with a web application to constantly display and store data to and from the database. Tomcat helped provide the connection between the front end and back end. AJAX calls were used to quickly update. The web application allowed a user to search in an engine that had autocorrect features, and users can add to their cart and purchase movies.</p>
 			<!--currently unable to locate image for the program. -->
 		</div>
 		<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Taiwanese American Organization Club (website)</h2>
-				<h3>May 2015 - May 2016</h3>
+				<h3>Taiwanese American Organization Club (website)</h3>
+				<h5>May 2015 - May 2016</h5>
 				<p>
 					The website features differing sections about the club with the use of Bootstrap, HTML, and CSS. It was my first exposure to front end design! Unfortunately, the website was not renewed, so it is not available anymore.
 				</p>
 		</div>
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Othello (game)</h2>
-			<h3>Feb 2015 - Mar 2015</h3>
+			<h3>Othello (game)</h3>
+			<h5>Feb 2015 - Mar 2015</h5>
 			<p>Through the use of the Python IDE and its graphical interface Tkinter, I learned to create/organize classes, use different libraries, and create a graphical user interface.</p>
 			<img class="imgscale-landscape" src="tkinter.JPG" />
 		</div>
@@ -295,32 +251,32 @@
 
 	<!--other experience section -->
     <section id="other">
-		<h1>Other Relevant Experiences</h1>
+		<h2>Other Relevant Experiences</h2>
 
 	    	<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Food Pantry Volunteer</h2>
-			<h3>West Valley Community Services<br/>Nov 2020 - Jun 2023</h3>
+			<h3>Food Pantry Volunteer</h3>
+			<h5>West Valley Community Services<br/>Nov 2020 - Jun 2023</h5>
 			<p>
 				Helped distribute food to clients and provided interpreation services. 
 			</p>
 		</div>	    
 	    
 	    	 <div class="col-4 col-12-s col-6-m boxing">
-			<h2>Vaccination Site Volunteer</h2>
-			<h3>Santa Clara County Public Health<br/>Jan 2021 - May 2021</h3>
+			<h3>Vaccination Site Volunteer</h3>
+			<h5>Santa Clara County Public Health<br/>Jan 2021 - May 2021</h5>
 			<p>
 				Helped with interpretation at a COVID-19 vaccination site.
 			</p>
 		</div>
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Research</h2>
-			<h3>Mar 2018 - Jun 2019</h3>
+			<h3>Research</h3>
+			<h5>Mar 2018 - Jun 2019</h5>
 			<p>Studied CLARITY and Arivis Vision 4D Software to analyze spinal cord samples.</p>
 		</div>
 	    
 	    	<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Peer Tutoring</h2>
-			<h3>UCI Bio Sci Peer Tutoring<br/>Sep 2018 - Dec 2018</h3>
+			<h3>Peer Tutoring</h3>
+			<h5>UCI Bio Sci Peer Tutoring<br/>Sep 2018 - Dec 2018</h5>
 			<p>
 				Because I loved to help others, including fellow classmates in the past that struggled with difficult STEM courses, I wanted to take on a free tutoring position. The teaching and public speaking I had to do in front of hundreds of students was quite an amazing experience, and the students that reached out and thanked me made me realize how much of an impact I can make.
 			</p>
@@ -328,8 +284,8 @@
 		</div>
 	    
 	    	<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Karate Lead Volunteer</h2>
-			<h3>Karate for All<br/>Jan 2018 - Jan 2019</h3>
+			<h3>Karate Lead Volunteer</h3>
+			<h5>Karate for All<br/>Jan 2018 - Jan 2019</h5>
 			<p>
 				Hands-on experience in an occupational therapy-based clinic with special needs children and adults.
 			</p>
@@ -342,11 +298,11 @@
 
 	<!--extracurriculars/other experiences-->
 	<section id="extra">
-		<h1>Extracurriculars</h1>
+		<h2>Extracurriculars</h2>
 
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Dancer</h2>
-			<h3>Commonality Dance Team<br/> Oct 2021 - Jun 2023</h3>
+			<h3>Dancer</h3>
+			<h5>Commonality Dance Team<br/> Oct 2021 - Jun 2023</h5>
 			<p>
 				I had joined this team upon discovering their unique dance style and learned from many fellow dancers and invited 
 				dance teachers. We were able to film a video at the end of the season and plan to compete the coming season.
@@ -354,8 +310,8 @@
 		</div>			
 		
 		<div class="col-4 col-12-s col-6-m boxing">
-			<h2>Dancer</h2>
-			<h3>Pursuit of Passion Dance Team<br/> Sep 2020 - Jun 2023</h3>
+			<h3>Dancer</h3>
+			<h5>Pursuit of Passion Dance Team<br/> Sep 2020 - Jun 2023</h5>
 			<p>
 				During the pandemic, I moved and had to relocate to a new dance team. On this team, we created dance videos and 
 				had many of our practices through Zoom. When the situation of the pandemic improved, we performed at an exhibition 
@@ -365,8 +321,8 @@
 		
 
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Study Abroad</h2>
-				<h3>Yonsei University - South Korea<br/>Jun 2017 - Aug 2017</h3>
+				<h3>Study Abroad</h3>
+				<h5>Yonsei University - South Korea<br/>Jun 2017 - Aug 2017</h5>
 				<p>
 					Over the summer, I had the opportunity to study abroad in South Korea at one of the top three universities in the country. Overall, I learned a lot about the culture and opened my mind to a new environment that I was initially not as comfortable in. I learned to travel on my own and think quickly when new problems arise. 
 				</p>
@@ -381,18 +337,18 @@
 		<div id="div-hide">
 
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Logistics Coordinator, Dancer</h2>
-				<h3>Common Ground Dance Team<br/> Oct 2018 - May 2020</h3>
+				<h3>Logistics Coordinator, Dancer</h3>
+				<h5>Common Ground Dance Team<br/> Oct 2018 - May 2020</h5>
 				<p>
 					After being on an exhibition hip-hop team for my first 4 years of college, I wanted to challenge myself and audition for a competitive dance team.  It has ignited my passion in the hobby of dancing and has further developed my skills in performing under pressure, adapting to a new group of individuals, finding new ways to challenge myself.
 				</p>
 				<!--instead of photo, shows a youtube video of dance competition-->
-				<iframe src="https://www.youtube.com/embed/_DUnPYgTuRI" frameborder="0" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/h9SAhRJvPio?si=HeMCYDGk2upptWMY" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</div>
 
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Alumni Board Member/Mentor</h2>
-				<h3>Urban Mótus (Dance Team)<br/> Sep 2018 - Jun 2019</h3>
+				<h3>Alumni Board Member/Mentor</h3>
+				<h5>Urban Mótus (Dance Team)<br/> Sep 2018 - Jun 2019</h5>
 				<p>
 					Because I stayed a 5th year in college to complete a dual degree, I wanted to help contribute to the next generation of members on my previous dance team. With all the opportunities given to me in leadership, friendship, and dance, I wanted to help guide and nurture the team to give them a positive experience.
 				</p>
@@ -400,18 +356,18 @@
 			</div>
 
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Coordinator</h2>
-				<h3>Urban Mótus (Dance Team)<br/> Jun 2017 - Jun 2018</h3>
+				<h3>Coordinator</h3>
+				<h5>Urban Mótus (Dance Team)<br/> Jun 2017 - Jun 2018</h5>
 				<p>
 					Currently, I lead a team of hip-hop dancers with two other coordinators for an exhibition team at UCI. I have artistic say on the dance sets we do and make decisions for the team. Some noteable events that I am in charge of are auditions, performances, and team bonding events. 
 				</p>
 				<!--instead of photo, shows a youtube video of audition workshop-->
-				<iframe src="https://www.youtube.com/embed/OphLhj9nDAk" frameborder="0" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/OphLhj9nDAk?si=ZVQfq73JcLl7gxOX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</div>
 
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Mentor</h2>
-				<h3>Management and Information Student Society<br/> Oct 2016 - Jun 2018</h3>
+				<h3>Mentor</h3>
+				<h5>Management and Information Student Society<br/> Oct 2016 - Jun 2018</h5>
 				<p>
 					My role as a mentor is to be there as a friend and to give school and professional advice in my field/major. This is my second year being a mentor for the program. I currently have a mentee this year and still keep in contact with the two mentees I had last year.
 				</p>
@@ -420,8 +376,8 @@
 				
 			
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Captain</h2>
-				<h3>Urban Mótus (Dance Team)<br/> Jun 2015 - Jun 2017</h3>
+				<h3>Captain</h3>
+				<h5>Urban Mótus (Dance Team)<br/> Jun 2015 - Jun 2017</h5>
 				<p>
 					My role as a captain was to help the coordinators make decisions and be the bridge between leadership and the team. As my first important leadership role in college, being a captain of the team helped me grow a lot as a leader. Now, I have become comfortable speaking aloud in front of a crowd and gained a lot of communication skills through working with the rest of leadership and interacting with members of the team. 
 				</p>
@@ -429,8 +385,8 @@
 			</div>
 
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Webmaster</h2>
-				<h3>Taiwanese American Organization<br/> May 2015 - May 2016</h3>
+				<h3>Webmaster</h3>
+				<h5>Taiwanese American Organization<br/> May 2015 - May 2016</h5>
 				<p>
 					As a Webmaster for TAO at UCI, I created a basic website which explained what the club was about, showed pictures of events, and displayed upcoming events.  As a board member, I helped plan events and attend meetings for the club. More details of the website are listed in the "Projects" section.
 				</p>
@@ -438,8 +394,8 @@
 			</div>
 
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Art Teacher</h2>
-				<h3>Friends of Children with Special Needs<br/> Aug 2013 - Jun 2014</h3>
+				<h3>Art Teacher</h3>
+				<h5>Friends of Children with Special Needs<br/> Aug 2013 - Jun 2014</h5>
 				<p>
 					I planned and taught arts and crafts to special needs children every other Saturday. Because I have a brother that has special needs, I wanted to give back to the special needs community and help them grow in their motor skills.
 				</p>
@@ -447,8 +403,8 @@
 			</div>
 
 			<div class="col-4 col-12-s col-6-m boxing">
-				<h2>Member</h2>
-				<h3>Urban Mótus (Dance Team)<br/> Nov 2014 - Jun 2019</h3>
+				<h3>Member</h3>
+				<h5>Urban Mótus (Dance Team)<br/> Nov 2014 - Jun 2019</h5>
 				<p>
 					I auditioned as a freshmen in college and have been on the team since then. From being on the team, I built strong friendships and learned time management through balancing dance and school.
 				</p>
