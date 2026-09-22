@@ -1,5 +1,5 @@
 /* main css file for index.html */
-/* author: Kristy Lin */
+/* author: Kristy */
 
 /*default for entire site*/
 * {
@@ -154,7 +154,6 @@ nav {
 	padding: 15px;
 	background-color: #000000;
 	font-size: 20px;
-	font-family: 'Google Sans Code';
 	position: fixed;
 	opacity: 0.9;
 }
@@ -162,7 +161,7 @@ nav {
 /*hover on links of nav bar*/
 nav a:hover {
 	padding: 5px 10px 5px 10px; /* ensure left/right padding same as 'a' padding */
-	background-color: #5d8fdac0;
+	background-color: rgb(32, 112, 224);
 	color: black;
 	border-radius: 5px;
 }
